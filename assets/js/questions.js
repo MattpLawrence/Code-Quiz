@@ -89,7 +89,7 @@ var myQuestions = [{
       c: "if i=!5 then",
       d: "if (i!=5)"
     },
-    correctAnswer: "a"
+    correctAnswer: "d"
   },
   {
     question: "How does a WHILE loop start?",
