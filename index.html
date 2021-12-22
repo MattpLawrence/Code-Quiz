@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="./assets/pictures/graduateIcon.ico">
+  <!-- Link css stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <!-- Font - Ubunto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f38b31e720.js" crossorigin="anonymous"></script>
+  <title>Code Quiz MPL</title>
+</head>
+<body>
+  <header id="header">
+    <h1>Code Quiz</h1>
+  </header>
+  <form id="quiz">
+    <Section id="question">
+      <h1 class="initial">Welcome to <span class="bold">Code Quiz</span>, a timed and scored coding themed quiz.</h1>
+      <h2 class="initial">Test you knowledge against the clock. Answer as many questions correctly in the allotted time of 60 seconds.</h2>
+      <h2 class="initial">Enter your name:</h2>
+    </Section>
+    <section id="answer">
+      <input id= "nameInput" class="initial" placeholder="Name" />
+      <button id="start" class="initial">Let's Go!</button>
+    </section>
+  </form>
+  <!-- link the JQuery library first -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- link my JS file second -->
+  <script src="./assets/js/questions.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
