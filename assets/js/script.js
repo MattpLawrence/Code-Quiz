@@ -64,7 +64,7 @@ function hideNameAlert() {
 
 
 function showUserName(){
-  userName.text("Current Competitor:   " + nameInput.val());
+  userName.text("Current Competitor: " + nameInput.val());
   headerEl.append(userName);
 }
 

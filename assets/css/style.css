@@ -1,19 +1,18 @@
-:root{
+:root {
   --darkestBlue: rgb(4, 32, 55);
   --darkBlue: rgb(18, 54, 82);
   --blue: rgb(41, 79, 109);
   --lightBlue: rgb(73, 109, 137);
   --lightestBlue: rgb(113, 142, 164);
   --titleBox: rgba(190, 214, 233, 1);
-
 }
 
-*{
+* {
   margin: 0;
   font-family: ubuntu, sans-serif;
 }
 /* *******************************Header****************** */
-header{
+header {
   height: 4rem;
   background-color: var(--darkestBlue);
   padding: 1rem;
@@ -21,22 +20,22 @@ header{
   color: white;
 }
 
-header h1{
+header h1 {
   display: inline-block;
   font-size: 3rem;
   padding-left: 5rem;
 }
 
-header h2{
+header h2 {
   font-family: monospace;
-  font-size: 1.8rem ;
+  font-size: 1.8rem;
   display: inline;
   float: right;
   line-height: 4rem;
   margin-right: 2rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
-header h3{
+header h3 {
   display: inline;
   line-height: 4rem;
   margin-left: 8rem;
@@ -44,34 +43,33 @@ header h3{
   line-height: 5rem;
 }
 
-
 /* *******************************Header Nav****************** */
-header nav{
+header nav {
   display: inline;
   float: right;
   padding-top: 1rem;
 }
 
-header nav ul{
+header nav ul {
   list-style-type: none;
 }
-header nav ul li{
+header nav ul li {
   display: inline-block;
   margin-right: 1.5rem;
   font-size: 2rem;
 }
 
-header nav ul li a{
+header nav ul li a {
   color: white;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: var(--lightestBlue);
   font-size: 2.5rem;
 }
 
-#email:hover::Before{
+#email:hover::before {
   content: "MattPLawrence@gmail.com";
   font-size: 1rem;
   position: absolute;
@@ -82,7 +80,7 @@ header nav ul li a:hover{
   margin-top: 2.6rem;
 }
 /* write a fade in animation for the tooltip */
-@keyframes fadeIn{
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -93,8 +91,7 @@ header nav ul li a:hover{
 
 /**************************** Initial section ********/
 
-
-#question{
+#question {
   display: block;
   text-align: center;
   /* border: .1rem black solid; */
@@ -103,18 +100,18 @@ header nav ul li a:hover{
   margin-left: auto;
   margin-right: auto;
 }
-section h1{
+section h1 {
   font-size: 2.5rem;
   color: var(--darkestBlue);
 }
 
-.bold{
+.bold {
   font-size: larger;
   text-decoration: underline;
   color: var(--blue);
 }
 
-section h2{
+section h2 {
   margin-left: auto;
   margin-right: auto;
   width: 60vw;
@@ -122,59 +119,56 @@ section h2{
   color: var(--blue);
 }
 
-
-#answer input{
+#answer input {
   margin: 1rem auto;
   display: block;
   width: 30%;
   height: 1.5rem;
-  border: .3rem var(--lightestBlue) solid;
+  border: 0.3rem var(--lightestBlue) solid;
 }
 
-#start{
+#start {
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 20vw;
   height: 2rem;
   background-color: var(--lightestBlue);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   font-size: 1.5rem;
   color: white;
   transition: 0.5s;
 }
 
-#start:hover{
+#start:hover {
   background-color: var(--blue);
   transform: scale(1.1);
 }
 
-
 /* ************answers buttons */
 
-
-.btnAnswers{
+.btnAnswers {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 50vw;
-  height: auto; 
+  height: auto;
   background-color: white;
-  border-radius: .3rem;
-  border: .3rem var(--lightestBlue) solid;
+  border-radius: 0.3rem;
+  border: 0.3rem var(--lightestBlue) solid;
   font-size: 1.5rem;
   color: var(--darkestBlue);
   transition: 0.5s;
   text-align: left;
 }
 
-.btnAnswers:hover{
+.btnAnswers:hover {
   background-color: var(--titleBox);
   transform: scale(1.1);
 }
 
-#rightWrong{
+#rightWrong {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -188,105 +182,99 @@ section h2{
   text-align: center;
 }
 
-#scoreContainer{
-    text-align: center;
+#scoreContainer {
+  text-align: center;
   margin-top: 2rem;
-  
 }
 
-#scoreTotal{
+#scoreTotal {
   display: inline-block;
   margin-right: 3rem;
   font-size: 1.5rem;
 }
-#scoreTotal::before{
+#scoreTotal::before {
   content: "Answers Correct: ";
 }
 
-#questionTotal{
+#questionTotal {
   display: inline-block;
   font-size: 1.5rem;
-  
 }
-#questionTotal::before{
+#questionTotal::before {
   content: "Questions Answered: ";
 }
 
-.finalPage{
+.finalPage {
   display: inline-block;
-  margin: 0 .5rem;
-  color: var(--darkestBlue)
+  margin: 0 0.5rem;
+  color: var(--darkestBlue);
 }
 
-.score{
+.score {
   font-size: 2rem;
   color: var(--blue);
   margin-bottom: 1rem;
-  
 }
 
-.label{
+.label {
   font-size: 1.5rem;
-
 }
 
-#finalPercentage{
+#finalPercentage {
   margin-bottom: 5rem;
   font-size: 1.8rem;
 }
 
-
-.restartButton{
+.restartButton {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 20vw;
-  height: auto; 
+  height: auto;
   background-color: white;
-  border-radius: .3rem;
-  border: .3rem var(--lightestBlue) solid;
+  border-radius: 0.3rem;
+  border: 0.3rem var(--lightestBlue) solid;
   font-size: 1.5rem;
   color: var(--darkestBlue);
   transition: 0.5s;
   text-align: center;
 }
-.restartButton:hover{
+.restartButton:hover {
   transform: scale(1.1);
   background-color: var(--titleBox);
 }
 /**************************************************** screen adjust */
-@media screen and (max-width: 800px) { 
-  header{
+@media screen and (max-width: 800px) {
+  header {
     padding: 0;
     height: 14vw;
   }
-  header h1{
+  header h1 {
     line-height: 14vw;
     font-size: 3vw;
     padding-left: 5vw;
   }
-  header nav{
+  header nav {
     padding-top: 0;
     line-height: 4vw;
   }
-  header nav ul{
+  header nav ul {
     color: white;
     list-style-type: circle;
   }
-  header nav ul li{
-    padding-top: .5vw;
+  header nav ul li {
+    padding-top: 0.5vw;
     padding-right: 4vw;
     display: block;
     margin-right: 1vw;
     font-size: 2.8vw;
   }
-  header nav ul li a:hover{
+  header nav ul li a:hover {
     color: var(--lightestBlue);
     font-size: 1rem;
   }
-  #email:hover::Before{
-
+  #email:hover::before {
     margin-top: 1.3rem;
   }
 }
