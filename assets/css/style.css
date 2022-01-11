@@ -1,10 +1,8 @@
 :root {
-  --darkestBlue: rgb(4, 32, 55);
-  --darkBlue: rgb(18, 54, 82);
-  --blue: rgb(41, 79, 109);
-  --lightBlue: rgb(73, 109, 137);
-  --lightestBlue: rgb(113, 142, 164);
-  --titleBox: rgba(190, 214, 233, 1);
+  --yellow: rgb(196, 133, 65);
+  --red: rgb(173, 0, 0);
+  --purple: rgb(113, 21, 90);
+  --lightPurple: rgba(178, 88, 156, 0.5);
 }
 
 * {
@@ -14,10 +12,10 @@
 /* *******************************Header****************** */
 header {
   height: 4rem;
-  background-color: var(--darkestBlue);
+  background-color: var(--yellow);
   padding: 1rem;
   font-family: ubuntu, sans-serif;
-  color: white;
+  color: var(--purple);
 }
 
 header h1 {
@@ -43,6 +41,12 @@ header h3 {
   line-height: 5rem;
 }
 
+#txtQuiz {
+  color: var(--red);
+}
+.txtCode {
+  color: var(--purple);
+}
 /* *******************************Header Nav****************** */
 header nav {
   display: inline;
@@ -65,7 +69,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: var(--lightestBlue);
+  color: var(--purple);
   font-size: 2.5rem;
 }
 
@@ -73,7 +77,7 @@ header nav ul li a:hover {
   content: "MattPLawrence@gmail.com";
   font-size: 1rem;
   position: absolute;
-  background-color: var(--lightestBlue);
+  background-color: var(--purple);
   color: var(--darkestBlue);
   animation: 3s fadeIn;
   margin-left: -10em;
@@ -107,8 +111,7 @@ section h1 {
 
 .bold {
   font-size: larger;
-  text-decoration: underline;
-  color: var(--blue);
+  color: var(--purple);
 }
 
 section h2 {
@@ -116,7 +119,7 @@ section h2 {
   margin-right: auto;
   width: 60vw;
   margin-top: 3rem;
-  color: var(--blue);
+  color: var(--purple);
 }
 
 #answer input {
@@ -124,7 +127,7 @@ section h2 {
   display: block;
   width: 30%;
   height: 1.5rem;
-  border: 0.3rem var(--lightestBlue) solid;
+  border: 0.3rem var(--purple) solid;
 }
 
 #start {
@@ -133,7 +136,7 @@ section h2 {
   display: block;
   width: 20vw;
   height: 2rem;
-  background-color: var(--lightestBlue);
+  background-color: var(--purple);
   border-radius: 0.3rem;
   font-size: 1.5rem;
   color: white;
@@ -141,7 +144,7 @@ section h2 {
 }
 
 #start:hover {
-  background-color: var(--blue);
+  background-color: var(--lightPurple);
   transform: scale(1.1);
 }
 
@@ -156,7 +159,7 @@ section h2 {
   height: auto;
   background-color: white;
   border-radius: 0.3rem;
-  border: 0.3rem var(--lightestBlue) solid;
+  border: 0.3rem var(--purple) solid;
   font-size: 1.5rem;
   color: var(--darkestBlue);
   transition: 0.5s;
@@ -164,7 +167,7 @@ section h2 {
 }
 
 .btnAnswers:hover {
-  background-color: var(--titleBox);
+  background-color: var(--lightPurple);
   transform: scale(1.1);
 }
 
@@ -212,7 +215,7 @@ section h2 {
 
 .score {
   font-size: 2rem;
-  color: var(--blue);
+  color: var(--purple);
   margin-bottom: 1rem;
 }
 
@@ -234,7 +237,7 @@ section h2 {
   height: auto;
   background-color: white;
   border-radius: 0.3rem;
-  border: 0.3rem var(--lightestBlue) solid;
+  border: 0.3rem var(--purple) solid;
   font-size: 1.5rem;
   color: var(--darkestBlue);
   transition: 0.5s;
@@ -242,7 +245,7 @@ section h2 {
 }
 .restartButton:hover {
   transform: scale(1.1);
-  background-color: var(--titleBox);
+  background-color: var(--lightPurple);
 }
 /**************************************************** screen adjust */
 @media screen and (max-width: 800px) {
@@ -271,7 +274,7 @@ section h2 {
     font-size: 2.8vw;
   }
   header nav ul li a:hover {
-    color: var(--lightestBlue);
+    color: var(--purple);
     font-size: 1rem;
   }
   #email:hover::before {
