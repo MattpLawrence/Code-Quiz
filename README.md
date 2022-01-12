@@ -2,7 +2,7 @@
 GT boot camp homework number 4. Website using JS, CSS, and HTML to set a timed quiz.
 
 ## Host Location:
-https://mattplawrence.github.io/GT-Code-Quiz/
+https://mattplawrence.github.io/Code-Quiz/
 
 ## Purpose:
 The purpose of this project was to create an online quiz to test our knowledge of coding, and our ability to create an application with JavaScript.
