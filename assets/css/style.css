@@ -148,7 +148,7 @@ section h2 {
   transform: scale(1.1);
 }
 
-/* ************answers buttons */
+/* ******************************answers buttons */
 
 .btnAnswers {
   margin-top: 2rem;
@@ -248,36 +248,25 @@ section h2 {
   background-color: var(--lightPurple);
 }
 /**************************************************** screen adjust */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   header {
     padding: 0;
     height: 14vw;
   }
   header h1 {
     line-height: 14vw;
-    font-size: 3vw;
+    font-size: 2.5em;
     padding-left: 5vw;
   }
-  header nav {
-    padding-top: 0;
-    line-height: 4vw;
+  header h2 {
+    line-height: 14vw;
+    font-size: 2em;
+    padding-left: 1vw;
   }
-  header nav ul {
-    color: white;
-    list-style-type: circle;
-  }
-  header nav ul li {
-    padding-top: 0.5vw;
-    padding-right: 4vw;
-    display: block;
-    margin-right: 1vw;
-    font-size: 2.8vw;
-  }
-  header nav ul li a:hover {
-    color: var(--purple);
-    font-size: 1rem;
-  }
-  #email:hover::before {
-    margin-top: 1.3rem;
+  header h3 {
+    line-height: 14vw;
+    font-size: 1.5em;
+    padding-left: 1vw;
+    margin-left: 5vw;
   }
 }
